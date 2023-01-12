@@ -1,11 +1,11 @@
 /* Xiaomi Mi R3P */
 
 #define BOARD_PID		"MI-R3P-breed"
-#define BOARD_NAME		"MI-R3P-breed"
+#define BOARD_NAME		"MI-R3P-spi"
 #define BOARD_DESC		"Xiaomi Mi R3P Wireless Router"
 #define BOARD_VENDOR_NAME	"Beijing Xiaomi Technology Co., Ltd."
-#define BOARD_VENDOR_URL	"http://www.mi.com/"
-#define BOARD_MODEL_URL		"http://www.mi.com/miwifir3p"
+#define BOARD_VENDOR_URL	"https://nas.dearjoe.top/"
+#define BOARD_MODEL_URL		"https://nas.daerjoe.top"
 #define BOARD_BOOT_TIME		20
 #define BOARD_FLASH_TIME	120
 
