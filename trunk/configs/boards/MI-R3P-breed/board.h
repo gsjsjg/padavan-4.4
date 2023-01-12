@@ -1,4 +1,4 @@
-/* Xiaomi Mi R3P */
+/* Xiaomi Mi R3P edit by dearjoe@qq.com */
 
 #define BOARD_PID		"MI-R3P-breed"
 #define BOARD_NAME		"MI-R3P-spi"
