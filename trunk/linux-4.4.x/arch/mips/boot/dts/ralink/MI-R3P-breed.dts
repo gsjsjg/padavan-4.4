@@ -8,7 +8,7 @@
 
 / {
 	compatible = "mediatek,mt7621-soc";
-	model = "Xiaomi R3P";
+	model = "MI-R3P-breed";
 
 	chosen {
 		bootargs = "console=ttyS0,115200";
