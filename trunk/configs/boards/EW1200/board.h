@@ -3,7 +3,7 @@
 #define BOARD_PID		"EW1200"
 #define BOARD_NAME		"EW1200"
 #define BOARD_DESC		"Afoundry EW1200 Wireless Router"
-#define BOARD_VENDOR_NAME	"ASUSTek Computer Inc."
+#define BOARD_VENDOR_NAME	"Afoundry Computer Inc."
 #define BOARD_VENDOR_URL	"https://nas.dearjoe.top/"
 #define BOARD_MODEL_URL		"https://nas.dearjoe.top/"
 #define BOARD_BOOT_TIME		30
