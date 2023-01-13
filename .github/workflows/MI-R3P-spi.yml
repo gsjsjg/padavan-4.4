@@ -122,8 +122,6 @@ jobs:
         echo "CONFIG_FIRMWARE_INCLUDE_SOFTETHERVPN_SERVER=y" >> .config
         sed -i '/CONFIG_FIRMWARE_INCLUDE_SOFTETHERVPN_CLIENT/d' .config
         echo "CONFIG_FIRMWARE_INCLUDE_SOFTETHERVPN_CLIENT=y" >> .config
-        sed -i '/CONFIG_FIRMWARE_INCLUDE_MENTOHUST/d' .config
-        echo "CONFIG_FIRMWARE_INCLUDE_MENTOHUST=y" >> .config
         sed -i '/CONFIG_FIRMWARE_INCLUDE_SRELAY/d' .config
         echo "CONFIG_FIRMWARE_INCLUDE_SRELAY=y" >> .config
         sed -i '/CONFIG_FIRMWARE_INCLUDE_WIREGUARD/d' .config
