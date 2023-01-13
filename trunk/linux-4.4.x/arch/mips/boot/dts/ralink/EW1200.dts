@@ -19,7 +19,7 @@
 
 		    work {
 			  label = "lan";
-			  gpios = <&gpio0 5 GPIO_ACTIVE_HIGHT>;
+			  gpios = <&gpio0 5 GPIO_ACTIVE_LOW>;
 	      	    };
 
 		    sys {
