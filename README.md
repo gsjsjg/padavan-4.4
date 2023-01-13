@@ -29,6 +29,8 @@ This project is based on original rt-n56u with latest mtk 4.4.198 kernel, which 
   - MI-4
   - MI-R3G
   - MI-R3P
+  - MI-R3P-breed-spi      # nand to spi 32M flash
+  - EW1200                # afoundry_ew1200
   - R2100
   - XY-C1
 
