@@ -15,41 +15,14 @@
     	};
 
 	leds {
-	      compatible = "gpio-leds";
-
-		    work {
-			  label = "lan";
-			  gpios = <&gpio0 5 GPIO_ACTIVE_LOW>;
-	      	    };
-
-		    sys {
-			  label = "power";
-			  gpios = <&gpio0 18 GPIO_ACTIVE_LOW>;
-		    };
+		compatible = "gpio-leds";
     
-        	    gpio-keys-polled {
-		    		 	compatible = "gpio-keys-polled";
-		    			#address-cells = <1>;
-		    			#size-cells = <0>;
-		    			poll-interval = <20>;
-
-		    			reset {
-			   			label = "reset";
-			   			gpios = <&gpio0 18 GPIO_ACTIVE_LOW>;
-			   			linux,code = <KEY_RESTART>;
-		     			};
-		     };
-
-		    reg_usb_vbus: regulator {
-		    				compatible = "regulator-fixed";
-		    				regulator-name = "usb_vbus";
-		    				regulator-min-microvolt = <5000000>;
-		    				regulator-max-microvolt = <5000000>;
-		    				gpio = <&gpio0 4 GPIO_ACTIVE_HIGH>;
-		    				enable-active-high;
-		    };
-  
-	}; 
+		usb {
+			label = "usb";
+			gpios = <&gpio0 4 GPIO_ACTIVE_LOW>;
+			linux,default-trigger = "usbport";
+		};
+	};
 
 &pcie {
 	     status = "okay";
