@@ -24,10 +24,6 @@
 		};
 	};
 
-&pcie {
-	     status = "okay";
-};
-
 &xhci {
 	     status = "okay";
 };
