@@ -7,42 +7,47 @@
 #include "mt7621-pinctrl-default-gpio.dtsi"
 
 / {
-	    compatible = "mediatek,mt7621-soc";
-	    model = "EW1200";
+   compatible = "mediatek,mt7621-soc";
+   model = "EW1200";
   
-   chosen {
-		         bootargs = "console=ttyS0,115200";
-	  };
+   	chosen {
+   		bootargs = "console=ttyS0,115200";
+    	};
 
 	leds {
-		      compatible = "gpio-leds";
+	      compatible = "gpio-leds";
 
 		    work {
-			         label = "lan";
-			         gpios = <&gpio0 5 GPIO_ACTIVE_HIGHT>;
-	      };
+			  label = "lan";
+			  gpios = <&gpio0 5 GPIO_ACTIVE_HIGHT>;
+	      	    };
 
 		    sys {
-			        label = "power";
-			        gpios = <&gpio0 18 GPIO_ACTIVE_LOW>;
+			  label = "power";
+			  gpios = <&gpio0 18 GPIO_ACTIVE_LOW>;
 		    };
     
-        usb {
-			        label = "usb";
-			        gpios = <&gpio0 4 GPIO_ACTIVE_LOW>;
-		    };
-	      gpio-keys-polled {
-		                      compatible = "gpio-keys-polled";
-		                      #address-cells = <1>;
-		                      #size-cells = <0>;
-		                      poll-interval = <20>;
+        	    gpio-keys-polled {
+		    		 	compatible = "gpio-keys-polled";
+		    			#address-cells = <1>;
+		    			#size-cells = <0>;
+		    			poll-interval = <20>;
 
-		                      reset {
-			                           label = "reset";
-			                           gpios = <&gpio0 18 GPIO_ACTIVE_LOW>;
-			                           linux,code = <KEY_RESTART>;
-		                      };
-	      };
+		    			reset {
+			   			label = "reset";
+			   			gpios = <&gpio0 18 GPIO_ACTIVE_LOW>;
+			   			linux,code = <KEY_RESTART>;
+		     			};
+		     };
+
+		    reg_usb_vbus: regulator {
+		    				compatible = "regulator-fixed";
+		    				regulator-name = "usb_vbus";
+		    				regulator-min-microvolt = <5000000>;
+		    				regulator-max-microvolt = <5000000>;
+		    				gpio = <&gpio0 4 GPIO_ACTIVE_HIGH>;
+		    				enable-active-high;
+		    };
   
 	}; 
 
@@ -55,5 +60,5 @@
 };
 
 &u3phy1 {
-	       status = "okay";
+	     status = "okay";
 };
