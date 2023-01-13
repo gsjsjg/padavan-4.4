@@ -120,18 +120,12 @@ jobs:
         echo "CONFIG_FIRMWARE_INCLUDE_CURL=y" >> .config
         sed -i '/CONFIG_FIRMWARE_INCLUDE_SOFTETHERVPN_SERVER/d' .config
         echo "CONFIG_FIRMWARE_INCLUDE_SOFTETHERVPN_SERVER=y" >> .config
-        sed -i '/CONFIG_FIRMWARE_INCLUDE_SOFTETHERVPN_SERVER/d' .config
-        echo "CONFIG_FIRMWARE_INCLUDE_SOFTETHERVPN_SERVER=y" >> .config
-        sed -i '/CONFIG_FIRMWARE_INCLUDE_SOFTETHERVPN_SERVER/d' .config
-        echo "CONFIG_FIRMWARE_INCLUDE_SOFTETHERVPN_SERVER=y" >> .config
         sed -i '/CONFIG_FIRMWARE_INCLUDE_SOFTETHERVPN_CLIENT/d' .config
         echo "CONFIG_FIRMWARE_INCLUDE_SOFTETHERVPN_CLIENT=y" >> .config
         sed -i '/CONFIG_FIRMWARE_INCLUDE_MENTOHUST/d' .config
         echo "CONFIG_FIRMWARE_INCLUDE_MENTOHUST=y" >> .config
         sed -i '/CONFIG_FIRMWARE_INCLUDE_SRELAY/d' .config
         echo "CONFIG_FIRMWARE_INCLUDE_SRELAY=y" >> .config
-        sed -i '/CONFIG_FIRMWARE_INCLUDE_MENTOHUST/d' .config
-        echo "CONFIG_FIRMWARE_INCLUDE_MENTOHUST=y" >> .config
         sed -i '/CONFIG_FIRMWARE_INCLUDE_WIREGUARD/d' .config
         echo "CONFIG_FIRMWARE_INCLUDE_WIREGUARD=y" >> .config
         sed -i '/CONFIG_FIRMWARE_INCLUDE_SCUTCLIENT/d' .config
@@ -139,8 +133,6 @@ jobs:
         sed -i '/CONFIG_FIRMWARE_INCLUDE_OPENVPN/d' .config
         echo "CONFIG_FIRMWARE_INCLUDE_OPENVPN=y" >> .config
         sed -i '/CONFIG_FIRMWARE_INCLUDE_GDUT_DRCOM/d' .config
-        echo "CONFIG_FIRMWARE_INCLUDE_GDUT_DRCOM=y" >> .config
-        sed -i '/CONFIG_FIRMWARE_INCLUDE_DOGCOM/d' .config
         echo "CONFIG_FIRMWARE_INCLUDE_DOGCOM=y" >> .config
         sed -i '/CONFIG_FIRMWARE_INCLUDE_DOGCOM/d' .config
         echo "CONFIG_FIRMWARE_INCLUDE_DOGCOM=y" >> .config
