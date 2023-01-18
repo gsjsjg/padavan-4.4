@@ -125,5 +125,5 @@ jobs:
       uses: actions/upload-artifact@master
       if: always()
       with:
-        name: Padavan-R3P-spi
+        name: Padavan-R3P-spi-dearjoe
         path: /opt/images
