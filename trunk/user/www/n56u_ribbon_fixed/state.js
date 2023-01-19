@@ -741,9 +741,8 @@ function show_footer(){
 	footer_code = '<div align="center" class="bottom-image"></div>\n';
 	footer_code +='<div align="center" class="copyright"><#footer_copyright_desc#></div>\n';
 	footer_code +='<div align="center">\n';
-	footer_code +='  <span>Highcharts by Torstein Hønsi & <a href="http://www.highcharts.com">Highsoft</a></span></br>\n';
-	footer_code +='  <span>Big icons designed by <a href="http://www.freepik.com">Freepik</a></br></span>\n';
-	footer_code +='  <span>Non-Commercial Use Only</span></br>\n';
+	footer_code +='  <span>生命不止 折腾不休</span>\n';
+	footer_code +='  <span>Edit by <a href="http://nas.dearjoe.top">dearjoe</a></span></br>\n';
 	footer_code +='</div>\n';
 
 	$("footer").innerHTML = footer_code;
